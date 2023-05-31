@@ -1,0 +1,43 @@
+.container__filters {
+  display: flex;
+  margin: 0;
+  cursor: pointer;
+  flex-direction: row;
+  padding-inline-start: 0;
+  margin-top: 25px;
+  &:hover,
+  &:focus {
+    color: var(--interactiv-color);
+    color: var(--white);
+  }
+  li {
+    list-style: none;
+  }
+  & li + li {
+    padding-left: 30px;
+  }
+}
+
+.container__buttons {
+  background-color: var(--ourteam-background-color);
+  border-radius: 4px;
+  border-color: var(--ourteam-background-color);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  /* identical to box height, or 162% */
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--body-color);
+  cursor: pointer;
+  border: none;
+  padding: 5px 20px;
+}
+
+.filters {
+  display: flex;
+  margin: 0;
+  cursor: pointer;
+  margin-bottom: 50px;
+}

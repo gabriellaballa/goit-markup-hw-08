@@ -1,0 +1,60 @@
+.contact-us {
+  h3 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white);
+  }
+}
+.contact-us__platforms {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  .contact-us__icons {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.contact-us__icons svg {
+  width: 20px;
+  height: 20px;
+  color: var(--white);
+  &:hover,
+  &:focus {
+    color: var(--interactiv-color);
+  }
+}
+
+.contact-us__platforms .contact-us__icons:hover,
+.contact-us__platforms .contact-us__icons:focus {
+  width: 44px;
+  height: 44px;
+  background: var(--interactiv-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.contact-us__platforms {
+  .contact-us__icons {
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    & svg:hover,
+    & svg:focus {
+      color: var(--white);
+    }
+  }
+}

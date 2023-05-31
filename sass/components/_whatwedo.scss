@@ -1,0 +1,50 @@
+.whatwedo {
+  display: flex;
+  justify-content: space-between;
+  /*margin: 94px 215px;*/
+  margin-top: 94px;
+  div + div {
+    padding-left: 30px;
+  }
+  div {
+    dd {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--envelope-and-smartphone-color);
+      margin-left: 0;
+      padding-top: 10px;
+    }
+  }
+  b {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--body-color);
+  }
+}
+
+.whatwedo__icon1,
+.whatwedo__icon2,
+.whatwedo__icon3,
+.whatwedo__icon4 {
+  background-color: var(--ourteam-background-color);
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.whatwedo__icon1 svg,
+.whatwedo__icon2 svg,
+.whatwedo__icon3 svg,
+.whatwedo__icon4 svg {
+  width: 66px;
+  height: 70px;
+  margin: 25px 102px;
+}

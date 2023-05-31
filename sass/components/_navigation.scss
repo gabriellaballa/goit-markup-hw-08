@@ -1,0 +1,30 @@
+.navigation__control {
+  padding-inline-start: 0;
+  display: flex;
+  flex-direction: row;
+  & li {
+    list-style-type: none;
+  }
+  li + li {
+    padding-left: 50px;
+    align-self: center;
+  }
+}
+
+.navigation__page {
+  position: relative;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover::after,
+  &:focus::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background-color: var(--interactiv-color);
+    border-radius: 2px;
+    display: block;
+    bottom: -22px;
+    left: 0;
+  }
+}

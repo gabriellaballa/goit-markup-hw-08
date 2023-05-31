@@ -1,0 +1,44 @@
+.hero {
+  background-color: var(--dark-grey);
+  padding: 200px 452px;
+  background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    url("/images/background-index.webp");
+}
+.hero__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+.hero__button-request {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 188% */
+  border-radius: 5px;
+  padding: 5px 30px;
+  border: none;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero__button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.hero--no-margin {
+  h1 {
+    margin: 0;
+  }
+}

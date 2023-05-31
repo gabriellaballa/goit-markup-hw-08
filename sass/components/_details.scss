@@ -1,0 +1,39 @@
+.details__address {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  padding-bottom: 12px;
+}
+.details__email,
+.details__tel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 12px;
+}
+.details__dim {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+}
+
+.details__tel-email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 60px;
+}
+.details {
+  display: flex;
+  align-items: baseline;
+}
+.details__aboutme {
+  margin-right: 94px;
+}

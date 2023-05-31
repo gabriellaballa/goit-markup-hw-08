@@ -1,0 +1,40 @@
+.contacts__text-sizing {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--envelope-and-smartphone-color);
+  text-decoration: none;
+  display: flex;
+  gap: 10px;
+}
+
+.contacts {
+  display: flex;
+  .contacts__info {
+    list-style: none;
+    display: flex;
+  }
+  & li + li {
+    padding-left: 40px;
+  }
+}
+
+.contacts__mail {
+  svg {
+    width: 16px;
+    height: 12px;
+  }
+}
+.contacts__phone {
+  svg {
+    width: 10px;
+    height: 16px;
+    &:hover,
+    &:focus {
+      color: var(--interactiv-color);
+    }
+  }
+}

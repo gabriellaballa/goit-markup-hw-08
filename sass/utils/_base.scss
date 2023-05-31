@@ -1,0 +1,32 @@
+body {
+  color: var(--body-color);
+  font-family: "Roboto", "Helvetica now", "Proxima Nova";
+}
+
+a:hover {
+  color: var(--interactiv-color);
+}
+button:hover {
+  color: var(--white);
+  background-color: var(--interactiv-color);
+}
+.navigation__logo,
+.details__logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--black);
+  text-decoration: none;
+}
