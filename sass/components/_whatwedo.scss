@@ -1,5 +1,6 @@
 .whatwedo {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   /*margin: 94px 215px;*/
   margin-top: 94px;
@@ -47,4 +48,26 @@
   width: 66px;
   height: 70px;
   margin: 25px 102px;
+}
+.whatwedo__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .whatwedo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .whatwedo {
+    display: flex;
+    justify-content: space-between;
+    /*margin: 94px 215px;*/
+    margin-top: 94px;
+  }
 }

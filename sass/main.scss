@@ -1,5 +1,4 @@
 @import "./utils/variables";
-@import "./components/logo";
 @import "./components/navigation";
 @import "./components/contacts";
 @import "./components/hero";
@@ -13,12 +12,14 @@
 @import "./components/container-portfolio";
 @import "./components/portfolio";
 @import "./components/contact-us";
+@import "./components/costumers-logo";
 body {
   color: var(--body-color);
   font-family: "Roboto", "Helvetica now", "Proxima Nova";
+  width: 100vw;
 }
 
-button:hover {
+.button:hover {
   color: var(--white);
   background-color: var(--interactiv-color);
 }

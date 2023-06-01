@@ -1,29 +1,3 @@
-.navigation__logo,
-.details__logo {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-.navigation__logo--blue {
-  color: var(--interactiv-color);
-  text-decoration: none;
-}
-.navigation__logo--black {
-  color: var(--black);
-  text-decoration: none;
-}
-.navigation__logo--white {
-  color: var(--white);
-  text-decoration: none;
-}
-.details__logo {
-  margin-bottom: 28px;
-}
-
 .costumers__logos {
   display: flex;
   flex-direction: row;

@@ -1,8 +1,14 @@
 .hero {
   background-color: var(--dark-grey);
-  padding: 200px 452px;
-  background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-    url("/images/background-index.webp");
+  position: relative;
+  background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
+  background-image: url("/images/background-index.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
 }
 .hero__title {
   font-family: "Roboto";
@@ -27,6 +33,11 @@
   border: none;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #2196f3;
+    color: #ffffff;
+  }
 }
 .hero__button {
   display: flex;
@@ -35,10 +46,42 @@
   cursor: pointer;
   outline: none;
   border: none;
+  padding-bottom: 128px;
 }
 
 .hero--no-margin {
   h1 {
     margin: 0;
+  }
+  position: relative;
+  left: 50px;
+  &:first-child {
+    padding-top: 118px;
+  }
+}
+// @media screen (min-width: 768px) {
+// }
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-color: var(--dark-grey);
+    padding: 200px 452px;
+    // background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
+    // url("/images/background-index.webp");
+  }
+
+  .hero__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+
+  .hero--no-margin {
+    h1 {
+      margin: 0;
+    }
   }
 }

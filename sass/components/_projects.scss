@@ -1,55 +1,70 @@
-.projects__container {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  padding-inline-start: 0;
-  li + li {
-    padding-left: 30px;
+.projects {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    display: none;
   }
 }
 
-.projects {
-  padding-bottom: 90px;
-  padding-top: 90px;
-  h2 {
+@media screen and (min-width: 1200px) {
+  .projects__container {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    li + li {
+      padding-left: 30px;
+    }
+  }
+
+  .projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 90px;
+    padding-top: 90px;
+    h2 {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.16;
+      text-align: center;
+      letter-spacing: 0.03em;
+
+      color: var(--body-color);
+    }
+  }
+  .projects__section {
+    padding: 94px 215px;
+    padding-bottom: 90px;
+    padding-top: 90px;
+  }
+
+  .projects__img {
+    position: relative;
+    display: block;
+  }
+  .projects__content {
+    width: 100%;
+    height: 70px;
+    left: 0;
+    bottom: 2px;
+    position: absolute;
+    background-color: rgba(47, 48, 58, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "Roboto";
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 14px;
+    line-height: 16px;
     text-align: center;
     letter-spacing: 0.03em;
-
-    color: var(--body-color);
+    text-transform: uppercase;
+    color: var(--white);
   }
-}
-.projects__section {
-  padding: 94px 215px;
-  padding-bottom: 90px;
-  padding-top: 90px;
-}
-
-.projects__img {
-  position: relative;
-  display: block;
-}
-.projects__content {
-  width: 100%;
-  height: 70px;
-  left: 0;
-  bottom: 2px;
-  position: absolute;
-  background-color: rgba(47, 48, 58, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white);
 }

@@ -1,3 +1,7 @@
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1200px;
+
 :root {
   --interactiv-color: #2196f3;
   --ourteam-background-color: #f5f4fa;
@@ -9,4 +13,5 @@
   --grey-white: #ececec;
   --border-color: #e1e1f9;
   --team-section-platforms: #afb1b8;
+  --red-text: #ff0000;
 }
