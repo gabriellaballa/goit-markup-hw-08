@@ -1,5 +1,8 @@
 .form-subscribe {
-  margin-left: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   span {
     font-family: "Roboto";
     font-style: normal;
@@ -12,8 +15,11 @@
   }
   .form-subscribe__input {
     margin-top: 20px;
+
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .form-subscribe__input-mail {
@@ -37,7 +43,9 @@
   border-radius: 4px;
   width: 200px;
   height: 50px;
-  margin-left: 12px;
+  //margin-left: 12px;
+  margin-top: 20px;
+  margin-bottom: 70px;
   border: none;
   color: var(--white);
   font-family: "Roboto";
@@ -50,6 +58,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   position: relative;
+
   &:hover,
   &:focus {
     background: var(--interactiv-color);
@@ -59,5 +68,22 @@
     box-shadow: 0px 15px 20px rgba(28, 30, 56, 0.4);
     color: #fff;
     transform: translateY(-7px);
+  }
+}
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+  .form-subscribe__button {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .form-subscribe .form-subscribe__input {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+  }
+  .form-subscribe__input-mail {
+    margin-right: 12px;
   }
 }

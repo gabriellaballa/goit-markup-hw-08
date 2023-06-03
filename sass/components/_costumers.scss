@@ -3,6 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  //position: relative;
+
   h2 {
     font-family: "Roboto";
     font-style: normal;
@@ -19,4 +21,20 @@
 .costumers__logo-styles {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.costumers__logos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .costumers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }

@@ -55,6 +55,7 @@
   flex-wrap: wrap;
   align-content: center;
   gap: 30px;
+  padding-bottom: 60px;
 }
 .team-section__description {
   display: flex;
@@ -95,65 +96,8 @@
   }
 }
 @media screen and (min-width: 768px) {
-  .team-section {
-    //padding: 94px 215px;
-    h2 {
-      font-family: "Roboto";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 1.16;
-      text-align: center;
-      letter-spacing: 0.03em;
-      color: var(--body-color);
-      margin-top: 0;
-      margin-bottom: 50px;
-    }
-  }
-
-  .team {
-    background-color: var(--ourteam-background-color);
-  }
-  .team-section--shadow {
-    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
-    border-radius: 10px;
-  }
-  .team-section__name {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    /* identical to box height */
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--body-color);
-    padding-top: 30px;
-    padding-bottom: 10px;
-  }
-  .team-section__job {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    /* identical to box height */
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--envelope-and-smartphone-color);
-    margin: 0;
-  }
   .team-section__pictures {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
   }
-  .team-section__description {
-    display: flex;
-    flex-direction: column;
-  }
-}
-
-@media screen and (min-width: 1200px) {
 }

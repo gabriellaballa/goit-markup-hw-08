@@ -4,6 +4,11 @@
   gap: 30px;
   margin-top: 50px;
   margin-bottom: 94px;
+  flex-wrap: wrap;
+  //position: absolute;
+  top: 150px;
+
+  justify-content: center;
   & svg {
     height: 92px;
     width: 170px;
@@ -18,5 +23,11 @@
   &:hover {
     color: var(--interactiv-color);
     border: 1px solid var(--interactiv-color);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .costumers__logos {
+    flex-direction: row;
   }
 }
