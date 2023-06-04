@@ -2,14 +2,20 @@
   background-color: var(--dark-grey);
   position: relative;
   background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2));
-  background-image: url("/images/background-index.webp");
+  background-image: url("/images/header-mobile.png");
+  background-image: image-set(
+    "../images/header-mobile.png" 1x,
+    "../images/header-mobile@2x.jpg" 2x
+  );
+
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  //background-position: center;
   width: 100%;
   height: auto;
   overflow: hidden;
 }
+
 .hero__title {
   font-family: "Roboto";
   font-style: normal;
@@ -54,22 +60,30 @@
     margin: 0;
   }
   position: relative;
-  left: 50px;
+  //left: 50px;
   &:first-child {
     padding-top: 118px;
   }
 }
-// @media screen (min-width: 768px) {
-// }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("/images/header-tablet.png");
+    background-image: image-set(
+      "../images/header-tablet.png" 1x,
+      "../images/header-tablet@2x.jpg" 2x
+    );
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-color: var(--dark-grey);
-    padding: 200px 452px;
-    // background: linear-gradient(rgba(25, 28, 38, 0.2), rgba(25, 28, 38, 0.2)),
-    // url("/images/background-index.webp");
+    background-image: url("/images/header-desktop.png");
+    background-image: image-set(
+      "../images/header-desktop.png" 1x,
+      "../images/header-desktop@2x.jpg" 2x
+    );
   }
-
   .hero__button {
     display: flex;
     justify-content: center;
